@@ -126,13 +126,13 @@ let finalSalary = baseSalary;
    } 
 
 
-if (yearsOfExperience >5 && performanceRating ==5) {
+if (yearsOfExperience >=5 && performanceRating ==5) {
     finalSalary += 50000;
 }
-if (yearsOfExperience <2 || performanceRating <3) {
+else if (yearsOfExperience <=2 || performanceRating <3) {
     finalSalary -= 20000;
 }
-if (performanceRating >=4) {
+else if (performanceRating >=4) {
     console.log("High performer");
 }
 else {console.log("Needs Improvement");
